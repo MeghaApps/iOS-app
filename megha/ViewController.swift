@@ -9,11 +9,18 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var buttonOutput: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
-
+    
+    @IBAction func didTapView(_ sender: UITapGestureRecognizer) {
+        print("View Tapped", sender)
+    }
+    
+    @IBAction func didTapButton(_ sender: UIButton) {
+        print("Button Tapped", sender)
+    }
+    
 }
-

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -13,18 +14,122 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="megha" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Ip2-hW-gc1">
+                                <rect key="frame" x="143.33333333333331" y="64" width="141.33333333333331" height="54.333333333333343"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="aUD-ye-PyE">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="54.333333333333336"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="aUD-ye-PyE" secondAttribute="height" multiplier="31:28" id="AJR-Fm-ft9"/>
+                                            <constraint firstAttribute="width" constant="60" id="nIH-2c-w9Z"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Megha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6zC-gI-2Z3">
+                                        <rect key="frame" x="76" y="0.0" width="65.333333333333314" height="54.333333333333336"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                                        <color key="textColor" red="0.0" green="0.30980392159999998" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4GU-sJ-FFh">
+                                <rect key="frame" x="64" y="208.33333333333337" width="300" height="300"/>
+                                <subviews>
+                                    <stackView opaque="NO" alpha="0.5" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="8lx-ef-i1M">
+                                        <rect key="frame" x="57.666666666666671" y="123.99999999999997" width="184.66666666666663" height="52"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="MTJ-W2-I9c">
+                                                <rect key="frame" x="79.999999999999986" y="0.99999999999999822" width="24.666666666666671" height="18"/>
+                                                <color key="tintColor" red="0.0" green="0.30980392159999998" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to capture a cloud" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tAt-OZ-ZJe">
+                                                <rect key="frame" x="0.0" y="27.333333333333371" width="184.66666666666666" height="24.666666666666671"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
+                                                <color key="textColor" red="0.0" green="0.30980392159999998" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lkt-GL-iWG">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="F21-Ft-StM"/>
+                                    <constraint firstItem="lkt-GL-iWG" firstAttribute="leading" secondItem="4GU-sJ-FFh" secondAttribute="leading" id="K0T-kp-0gt"/>
+                                    <constraint firstAttribute="bottom" secondItem="lkt-GL-iWG" secondAttribute="bottom" id="Sh7-TB-Ssj"/>
+                                    <constraint firstAttribute="trailing" secondItem="lkt-GL-iWG" secondAttribute="trailing" id="U5C-QZ-5Zo"/>
+                                    <constraint firstItem="lkt-GL-iWG" firstAttribute="top" secondItem="4GU-sJ-FFh" secondAttribute="top" id="bhS-d0-Aos"/>
+                                    <constraint firstItem="8lx-ef-i1M" firstAttribute="centerX" secondItem="4GU-sJ-FFh" secondAttribute="centerX" id="gKv-1g-H5a"/>
+                                    <constraint firstItem="8lx-ef-i1M" firstAttribute="centerY" secondItem="4GU-sJ-FFh" secondAttribute="centerY" id="kLb-pJ-Rvs"/>
+                                    <constraint firstAttribute="width" secondItem="4GU-sJ-FFh" secondAttribute="height" multiplier="1:1" id="lga-uh-l5d"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Csp-S1-Q9g" appends="YES" id="TKD-nO-kTA"/>
+                                </connections>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prediction:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cTR-26-W7e">
+                                <rect key="frame" x="64" y="573.33333333333337" width="300" height="27.333333333333371"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.30980392159999998" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please capture an image to see the prediction." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbM-xG-bp5">
+                                <rect key="frame" x="64" y="620.66666666666663" width="300" height="19.333333333333371"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.30980392159999998" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tZF-uh-n7A">
+                                <rect key="frame" x="141" y="740" width="146" height="32"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
+                                <state key="normal" title="Capture another cloud"/>
+                                <connections>
+                                    <action selector="didTapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sbL-P6-ZCS"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4GU-sJ-FFh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ds4-0K-7LB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cTR-26-W7e" secondAttribute="trailing" constant="64" id="EOp-Zz-LRr"/>
+                            <constraint firstItem="cTR-26-W7e" firstAttribute="top" secondItem="4GU-sJ-FFh" secondAttribute="bottom" constant="65" id="M3u-Dg-m3m"/>
+                            <constraint firstItem="4GU-sJ-FFh" firstAttribute="top" secondItem="Ip2-hW-gc1" secondAttribute="bottom" constant="90" id="O3T-cw-hFH"/>
+                            <constraint firstItem="Ip2-hW-gc1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="PB9-QN-Es3"/>
+                            <constraint firstItem="qbM-xG-bp5" firstAttribute="top" secondItem="cTR-26-W7e" secondAttribute="bottom" constant="20" id="TVA-Z5-a0o"/>
+                            <constraint firstItem="Ip2-hW-gc1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VfP-QP-8ga"/>
+                            <constraint firstItem="tZF-uh-n7A" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="141" id="dGy-7G-lkN"/>
+                            <constraint firstItem="cTR-26-W7e" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="64" id="dl2-Ml-N8f"/>
+                            <constraint firstItem="tZF-uh-n7A" firstAttribute="top" secondItem="qbM-xG-bp5" secondAttribute="bottom" constant="100" id="g9h-PX-42m"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qbM-xG-bp5" secondAttribute="trailing" constant="64" id="gP5-4R-QEd"/>
+                            <constraint firstItem="qbM-xG-bp5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="64" id="kju-63-OLx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tZF-uh-n7A" secondAttribute="trailing" constant="141" id="uYQ-iJ-tVV"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="buttonOutput" destination="qbM-xG-bp5" id="0ez-2x-Sgy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Csp-S1-Q9g">
+                    <connections>
+                        <action selector="didTapView:" destination="BYZ-38-t0r" id="tEf-1u-Y4z"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="35" y="94"/>
+            <point key="canvasLocation" x="33.644859813084111" y="93.30453563714903"/>
         </scene>
     </scenes>
     <resources>
+        <image name="camera.fill" catalog="system" width="128" height="94"/>
+        <image name="icon" width="1024" height="1024"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
