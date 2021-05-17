@@ -13,9 +13,11 @@
 		29003DD1265234930052E311 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29003DCF265234930052E311 /* Main.storyboard */; };
 		29003DD3265234990052E311 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29003DD2265234990052E311 /* Assets.xcassets */; };
 		29003DD6265234990052E311 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29003DD4265234990052E311 /* LaunchScreen.storyboard */; };
+		4F02C532D7887672184302FC /* Pods_megha.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AD2E0818A7FC969539387DF /* Pods_megha.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		28C2FB9C7FF4BDEB2D2886C4 /* Pods-megha.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-megha.debug.xcconfig"; path = "Target Support Files/Pods-megha/Pods-megha.debug.xcconfig"; sourceTree = "<group>"; };
 		29003DC6265234930052E311 /* megha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = megha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29003DC9265234930052E311 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29003DCB265234930052E311 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		29003DD2265234990052E311 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		29003DD5265234990052E311 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		29003DD7265234990052E311 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AD2E0818A7FC969539387DF /* Pods_megha.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_megha.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBE4854D4A66462BCDC7C718 /* Pods-megha.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-megha.release.xcconfig"; path = "Target Support Files/Pods-megha/Pods-megha.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F02C532D7887672184302FC /* Pods_megha.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				29003DC8265234930052E311 /* megha */,
 				29003DC7265234930052E311 /* Products */,
+				8F8738F9920FF1C3EDE5D778 /* Pods */,
+				E577E049BFEE578E4A8D627C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = megha;
 			sourceTree = "<group>";
 		};
+		8F8738F9920FF1C3EDE5D778 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				28C2FB9C7FF4BDEB2D2886C4 /* Pods-megha.debug.xcconfig */,
+				EBE4854D4A66462BCDC7C718 /* Pods-megha.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E577E049BFEE578E4A8D627C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9AD2E0818A7FC969539387DF /* Pods_megha.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +99,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 29003DDA265234990052E311 /* Build configuration list for PBXNativeTarget "megha" */;
 			buildPhases = (
+				524CD189E932AABAA36E753C /* [CP] Check Pods Manifest.lock */,
 				29003DC2265234930052E311 /* Sources */,
 				29003DC3265234930052E311 /* Frameworks */,
 				29003DC4265234930052E311 /* Resources */,
@@ -131,6 +157,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		524CD189E932AABAA36E753C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-megha-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		29003DC2265234930052E311 /* Sources */ = {
@@ -283,6 +334,7 @@
 		};
 		29003DDB265234990052E311 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28C2FB9C7FF4BDEB2D2886C4 /* Pods-megha.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +354,7 @@
 		};
 		29003DDC265234990052E311 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBE4854D4A66462BCDC7C718 /* Pods-megha.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
