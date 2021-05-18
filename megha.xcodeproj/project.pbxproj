@@ -13,6 +13,7 @@
 		29003DD1265234930052E311 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29003DCF265234930052E311 /* Main.storyboard */; };
 		29003DD3265234990052E311 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29003DD2265234990052E311 /* Assets.xcassets */; };
 		29003DD6265234990052E311 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29003DD4265234990052E311 /* LaunchScreen.storyboard */; };
+		29003DDE265250290052E311 /* model.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 29003DDD265250290052E311 /* model.tflite */; };
 		4F02C532D7887672184302FC /* Pods_megha.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AD2E0818A7FC969539387DF /* Pods_megha.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,7 @@
 		29003DD2265234990052E311 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		29003DD5265234990052E311 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		29003DD7265234990052E311 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29003DDD265250290052E311 /* model.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = model.tflite; sourceTree = "<group>"; };
 		9AD2E0818A7FC969539387DF /* Pods_megha.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_megha.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBE4854D4A66462BCDC7C718 /* Pods-megha.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-megha.release.xcconfig"; path = "Target Support Files/Pods-megha/Pods-megha.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,6 +72,7 @@
 				29003DD2265234990052E311 /* Assets.xcassets */,
 				29003DD4265234990052E311 /* LaunchScreen.storyboard */,
 				29003DD7265234990052E311 /* Info.plist */,
+				29003DDD265250290052E311 /* model.tflite */,
 			);
 			path = megha;
 			sourceTree = "<group>";
@@ -80,7 +83,6 @@
 				28C2FB9C7FF4BDEB2D2886C4 /* Pods-megha.debug.xcconfig */,
 				EBE4854D4A66462BCDC7C718 /* Pods-megha.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -153,6 +155,7 @@
 				29003DD6265234990052E311 /* LaunchScreen.storyboard in Resources */,
 				29003DD3265234990052E311 /* Assets.xcassets in Resources */,
 				29003DD1265234930052E311 /* Main.storyboard in Resources */,
+				29003DDE265250290052E311 /* model.tflite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
