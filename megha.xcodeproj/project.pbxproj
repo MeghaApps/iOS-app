@@ -14,6 +14,8 @@
 		29003DD3265234990052E311 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29003DD2265234990052E311 /* Assets.xcassets */; };
 		29003DD6265234990052E311 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29003DD4265234990052E311 /* LaunchScreen.storyboard */; };
 		29003DDE265250290052E311 /* model.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 29003DDD265250290052E311 /* model.tflite */; };
+		29E23E7F26539FCE00F8C04F /* ImageClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E23E7E26539FCE00F8C04F /* ImageClassifier.swift */; };
+		29E23E812653A24F00F8C04F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E23E802653A24F00F8C04F /* Extensions.swift */; };
 		4F02C532D7887672184302FC /* Pods_megha.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AD2E0818A7FC969539387DF /* Pods_megha.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +30,8 @@
 		29003DD5265234990052E311 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		29003DD7265234990052E311 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29003DDD265250290052E311 /* model.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = model.tflite; sourceTree = "<group>"; };
+		29E23E7E26539FCE00F8C04F /* ImageClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClassifier.swift; sourceTree = "<group>"; };
+		29E23E802653A24F00F8C04F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		9AD2E0818A7FC969539387DF /* Pods_megha.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_megha.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBE4854D4A66462BCDC7C718 /* Pods-megha.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-megha.release.xcconfig"; path = "Target Support Files/Pods-megha/Pods-megha.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,6 +72,8 @@
 				29003DC9265234930052E311 /* AppDelegate.swift */,
 				29003DCB265234930052E311 /* SceneDelegate.swift */,
 				29003DCD265234930052E311 /* ViewController.swift */,
+				29E23E802653A24F00F8C04F /* Extensions.swift */,
+				29E23E7E26539FCE00F8C04F /* ImageClassifier.swift */,
 				29003DCF265234930052E311 /* Main.storyboard */,
 				29003DD2265234990052E311 /* Assets.xcassets */,
 				29003DD4265234990052E311 /* LaunchScreen.storyboard */,
@@ -193,7 +199,9 @@
 			files = (
 				29003DCE265234930052E311 /* ViewController.swift in Sources */,
 				29003DCA265234930052E311 /* AppDelegate.swift in Sources */,
+				29E23E7F26539FCE00F8C04F /* ImageClassifier.swift in Sources */,
 				29003DCC265234930052E311 /* SceneDelegate.swift in Sources */,
+				29E23E812653A24F00F8C04F /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
